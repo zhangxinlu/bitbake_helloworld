@@ -1,37 +1,37 @@
 inherit logging
 
 addtask fetch
-python base_do_fetch() {
+python do_fetch() {
     bb.note("BASE_DO_FETCH")
 }
 
 addtask unpack after do_fetch
-python base_do_unpack() {
+python do_unpack() {
     bb.note("BASE_DO_UNPACK")
 }
 
 addtask patch after do_unpack
-base_do_patch() {
+do_patch() {
     bbnote "BASE_DO_PATCH"
 }
 
 addtask configure after do_patch
-base_do_configure() {
+do_configure() {
     bbnote "BASE_DO_CONFIGURE"
 }
 
 addtask make after do_configure
-base_do_make() {
+do_make() {
     bbnote "BASE_DO_MAKE"
 }
 
 addtask install after do_make
-base_do_install() {
+do_install() {
     bbnote "BASE_DO_INSTALL"
 }
 
 addtask build after do_install
-base_do_build() {
+do_build() {
     bbnote "DO_BUILD"
 }
 

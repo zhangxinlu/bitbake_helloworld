@@ -4,3 +4,7 @@
 1. 2016-01-05 运行 bitbake firstrecipe -vDD 后提示ERROR: Nothing PROVIDES 'firstrecipe' 
 
 2. 2016-01-06 根据MikeQin提供建议增加 PV 和 PN 的定义，错误解决
+
+3. 2016-01-07 精简为最小的编译系统，可以清晰看出那些是必不可少的语句 
+
+
